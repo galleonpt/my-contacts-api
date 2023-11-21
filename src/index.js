@@ -10,8 +10,7 @@ app.use(routes);
 
 app.use((error, request, response, next) => {
   console.log(error);
-  console.log(error);
   response.sendStatus(500);
 });
 
-app.listen(9999, () => console.log('Server running at http://localhost:9999'));
+app.listen(3333, () => console.log('Server running at http://localhost:3333'));
