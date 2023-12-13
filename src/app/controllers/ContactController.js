@@ -38,7 +38,7 @@ class ContactController {
       name, phone, email, category_id,
     });
 
-    response.json(contact);
+    return response.status(201).json(contact);
   }
 
   async update(request, response) {
@@ -67,7 +67,7 @@ class ContactController {
       name, phone, email, category_id,
     });
 
-    response.json(contact);
+    return response.json(contact);
   }
 
   async delete(request, response) {
@@ -75,7 +75,7 @@ class ContactController {
 
     await ContactsRepository.delete(id);
 
-    response.sendStatus(204);
+    return response.sendStatus(204);
   }
 }
 
