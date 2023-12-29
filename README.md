@@ -51,6 +51,11 @@ To install and run this project you should tun the commands below:
 
 Go to `schema.sql` copy all the content and past it on your terminal. This will create all the tables.
 
+- **Install the dependencies**
+```bash
+  npm install
+```
+
 - **Start the app**
 ```bash
   npm run start
